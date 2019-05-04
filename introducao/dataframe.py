@@ -15,3 +15,8 @@ print(df.columns)
 print(df["Seminário"])
 
 print(df.describe())
+
+# Ordenação de DataFrame
+df = df.sort_values(by="Seminário")
+
+print(df)
