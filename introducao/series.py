@@ -16,3 +16,8 @@ print("Média: ", notas.mean())
 print("Desvio padrão: ", notas.std())
 
 print(notas.describe())
+
+# Aplicação de expressões e funções matemáticas de numpy
+print(notas**2)
+
+print(np.log(notas))
