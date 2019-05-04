@@ -18,3 +18,8 @@ print("\nContagem dos valores de uma coluna (Bairro)\n",
 
 print("\nNormalização dos valores contados da coluna Bairro\n",
       df["bairro"].value_counts(normalize=True))
+
+# Com Pandas, podemos agrupar os dados com base em alguns critérios,
+# o que pode ser útil para resolver os mais amplos problemas.
+print("\nAgrupamento do DataFrame pelos valores da coluna Bairro, com informação das médias agrupadas pelos valores da coluna Bairros\n", 
+    df.groupby("bairro").mean())
