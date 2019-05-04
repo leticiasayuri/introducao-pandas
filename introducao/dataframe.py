@@ -7,3 +7,11 @@ df = pd.DataFrame({'Aluno': ["Wilfred", "Abbie", "Harry", "Julia", "Carrie"],
                    'Prova': [2, 7, 5, 10, 6],
                    'Seminário': [8.5, 7.5, 9.0, 7.5, 8.0]})
 print(df)
+
+print(df.dtypes)
+
+print(df.columns)
+
+print(df["Seminário"])
+
+print(df.describe())
