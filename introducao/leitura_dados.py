@@ -23,3 +23,6 @@ print("\nNormalização dos valores contados da coluna Bairro\n",
 # o que pode ser útil para resolver os mais amplos problemas.
 print("\nAgrupamento do DataFrame pelos valores da coluna Bairro, com informação das médias agrupadas pelos valores da coluna Bairros\n", 
     df.groupby("bairro").mean())
+
+print("\nListar os valores da coluna PM2 (do agrupamento) em ordem crescente\n", 
+    df.groupby("bairro").mean()["pm2"].sort_values())
