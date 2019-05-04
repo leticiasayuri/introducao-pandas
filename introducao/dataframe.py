@@ -17,6 +17,9 @@ print(df["Seminário"])
 print(df.describe())
 
 # Ordenação de DataFrame
-df = df.sort_values(by="Seminário")
+# df = df.sort_values(by="Seminário")
 
 print(df)
+
+# Seleção de valores pelo index
+print(df.loc[3])
