@@ -22,3 +22,9 @@ plt.close()
 contagem2 = df["bairro"].value_counts().plot.barh()
 plt.savefig("introducao\contagem_2.pdf")
 plt.close()
+
+# Título para o gráfico
+contagem3 = df["bairro"].value_counts().plot.barh(
+    title="Número de apartamentos por bairro")
+plt.savefig("introducao\contagem_3.pdf")    
+plt.close()
