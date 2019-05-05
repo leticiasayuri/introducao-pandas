@@ -37,3 +37,16 @@ print("\nDeixar os nomes dos bairros com apenas os três primeiros caracteres, a
 
 print("\nDeixar os nomes dos bairros com apenas os três primeiros caracteres, aplicando uma função lamda aos dados\n",
       df["bairro"].apply(lambda x: x[:3]))
+
+# Tratamento de dados incompletos
+df2 = df.head()
+print("\nDataFrame de 5 linhas, criado a partir do DataFrame principal\n", df2)
+
+df2 = df2.replace({"pm2": {12031.25: np.nan}})
+print("\nTratamento de dados incompletos no DataFrame df2\n", df2)
+
+print("\nRemoção de linhas ou colunas que possuam up.nan\n", df2.dropna())
+
+print("\nPreenchimento de valores NaN com outro valor específico\n", df2.fillna(99))
+
+print("\nIndicação de quais valores são NaN e quais não são\n", df2.isna())
