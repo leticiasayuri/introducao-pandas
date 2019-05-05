@@ -39,3 +39,8 @@ plt.style.use("ggplot")
 dispersao2 = df.plot.scatter(x="preco", y="area")
 plt.savefig("introducao\dispersao_2.pdf")
 plt.close()
+
+# Gráfico de pizza
+pizza1 = df["quartos"].value_counts().plot.pie()
+plt.savefig("introducao\pizza_1.pdf")
+plt.close()
